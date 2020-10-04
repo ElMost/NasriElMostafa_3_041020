@@ -1,0 +1,494 @@
+html
+{
+    font-size: 14px;
+}
+
+header
+{
+    text-align: center;
+    padding-bottom: 40px;
+    
+}
+.displayed
+{
+    width: 100%;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+/* ==========================================*/
+
+
+#list
+{
+    padding-left: 0px;
+
+}
+
+#list li {
+	width: 100%;
+	opacity: 1;
+    animation: fadeIn 1s ease-in both;
+    display: flex;
+    border-radius: 10px;
+    padding-bottom: 20px;
+    padding-top: 20px;
+    text-align: left;
+}
+
+/* #list li:nth-child(2) {
+	animation-delay: 1s;
+}
+#list li:nth-child(3) {
+	animation-delay: 2s;
+}
+#list li:nth-child(4) {
+	animation-delay: 3s;
+}
+#list li:nth-child(5) {
+	animation-delay: 4s;
+}
+
+@keyframes fadeIn {
+	from {
+		opacity: 0;
+		transform: translate3d(0, -20%, 0);
+	}
+	to {
+		opacity: 1;
+		transform: translate3d(0, 0, 0);
+	} */
+}
+
+h1
+{
+    text-align: center;
+   
+    
+  
+}
+header h1
+{
+    font-family: 'Shrikhand';
+    background-color: white;
+    margin-bottom: 0px;
+    margin-top: 0px;
+    padding: 3px;
+    color: black;
+    font-size: 20px;
+
+
+}
+
+
+
+
+h4 {
+
+    margin: 0px;
+    font-family: 'Shrikhand';
+    font-size: 22px;
+    color: white;
+    background-color: black;
+}
+/*==============================================*/
+
+.m, .fa-mobile-alt, .fa-store
+{    
+    font-size: small;
+    margin-right: 5%;
+    margin-left: 5%;
+    margin-bottom: auto;
+    margin-top: auto;    
+}
+
+
+body
+{
+    margin: 0px;
+    font-family: 'Roboto', sans-serif;
+
+}
+.resto
+{
+    border: solid;
+    border-radius: 5.5%;
+    border-color: rgb(243, 237, 237);
+    width: 100%;
+    margin: auto;
+}
+footer
+{
+    color: white;
+    background-color: black;
+    padding-bottom: 30px;    
+}
+footer p
+{
+    margin-bottom: 0px;
+    margin-top: 5px;
+    font-family: 'roboto';
+    font-size: 13px;
+    font: small-caption;
+
+}
+
+.h4
+{
+    padding-top: 10px;
+    font-family: 'Shrikhand';
+}
+h3
+{
+    margin-top: 0px;
+}
+.btn
+{
+    background-color: #9356DC;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-radius: 30px;
+    color: white;
+    width: 60%;
+    border: none;
+}
+
+button:hover, li:hover
+{
+    cursor: pointer;
+    background-color:#D0D3D4   ;
+
+}
+
+main h3,main p
+{
+    background-color: white;
+    margin-left: 10px;
+    margin-bottom: 0PX;
+    margin-top: 0px;
+    width: 100%;
+    text-align: left;
+}
+main p
+{
+    padding-bottom: 10px;
+}
+
+main, header, li
+{
+    background-color: #F2F3F4 
+}
+.b
+{
+    background-color: white;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    display: inline-flex;
+    justify-content: space-between;
+    width: 100%;
+    padding-top: 15px;
+}
+
+.localisation
+{
+    background-color: #D6DBDF;
+    padding: 5px;
+}
+.fa-map-marker-alt
+{
+    font-size: 17px;
+    margin-right: 10px;
+}
+
+
+
+.numero
+{
+    font-size: 0.6rem;    
+    padding: 4px;
+    border-radius: 50%;
+    color: white;
+    background-color: #9356DC;
+    width: 10px;
+    height: 10px;
+    text-align: center;
+    margin-bottom: auto;
+    margin-top: auto;
+   
+}
+
+nav, .restaurant
+{
+    text-align: center;
+    width: 85%;
+    margin: auto;
+}
+
+
+.r
+{
+    width: 100%;
+    margin-top: 3px;
+    position: relative;
+    left: -8px;
+    display: flex;
+    flex-direction: row;
+}
+main h2, nav h2
+{
+    text-align: left;
+}
+.fa-utensils
+{
+    margin-right: 10px;
+    font-size: 12px;
+
+}
+.fa-hands-helping
+{
+    margin-right: 5px;
+    font-size: 12px;
+}
+.fo
+{
+    width: 85%;
+    margin:auto;
+}
+footer p, footer h4
+{
+    margin-left: 10px;
+    font-size: 14px;
+}
+footer p
+{
+    margin-bottom: 0px;
+}
+.mail
+{
+    text-decoration: none;
+    color: white
+}
+
+/* coeur plein */
+main .fas{
+    display: none;  /*  invisble */
+    color:#9356DC;
+    cursor: pointer;
+}
+.icone{
+    margin-right: 20px;
+    height: 15px;
+}
+.icone:hover .fas {
+   display: block;  /*  visible */
+}
+.icone:hover .far {
+   display: none;  /*  invisble */
+}
+#displ
+{
+    position: relative;
+
+}
+.nouveau
+{
+    border: solid;
+    width: 20%;
+    background-color: #99E2D0;
+    position: absolute;
+    z-index: 1;
+    margin: 10px;
+    right: 25px;
+    padding: 3px;
+ 
+
+}
+.logo1
+{
+    font-family: 'Shrikhand';
+    margin-left: 10px;
+    padding-top: 10px;
+    margin-bottom: 15px;
+
+}
+@media only screen and (min-width: 768px)
+
+{
+    .nouveau
+    {
+        right: 100px;
+        width: 12%;
+
+    }
+} 
+
+/* @media only screen and (min-width: 991.98px) */
+@media only screen and (min-width: 991.98px) and (max-device-width : 1024px)
+/* @media only screen and (min-width : 1224px) */
+{
+    body
+    {
+        font-size: 20px;
+    }
+    h1
+    {
+        background-color: white;
+    }
+    ul
+    {
+        display: flex;
+        width: 95%;
+        margin: auto;
+    }
+    li
+    {
+        margin: 15px;
+    }
+    
+    
+    
+    nav
+    {
+        width: 100%;
+    }
+    
+    .restos
+    {
+        display: flex;
+        width: 98%;
+        margin: auto;
+    }
+    .displayed
+    {
+        height: 200px;
+        width: 100%;
+    }
+    .restaurant
+    {
+        width: 100%;
+    }
+    .nouveau
+    {
+        left: 300px;
+        width: 12%;
+
+    }
+    .resto
+    {
+        width: 90%;
+    }
+    .res
+    {
+        width: 100%;
+    }
+    .logo1,footer p
+    {
+        text-align: center;
+        font-size: 20px;
+    }
+    nav h2, main h2
+    {
+        text-align: center;
+        font-size: 40px;
+    }
+   
+    
+}
+@media only screen and (min-width : 1224px)
+{
+    body
+    {
+        font-size: 20px;
+    }
+    h1
+    {
+        background-color: white;
+    }
+    ul
+    {
+        display: flex;
+        width: 95%;
+        margin: auto;
+    }
+    li
+    {
+        margin: 15px;
+    }
+    
+    
+    
+    nav
+    {
+        width: 100%;
+    }
+    
+    .restos
+    {
+        display: flex;
+        width: 98%;
+        margin: auto;
+    }
+    .displayed
+    {
+        height: 200px;
+        width: 100%;
+    }
+    .restaurant
+    {
+        width: 100%;
+    }
+    .nouveau
+    {
+        left: 470px;
+        width: 12%;
+
+    }
+    .resto
+    {
+        width: 90%;
+    }
+    .res
+    {
+        width: 100%;
+    }
+    .logo1,footer p
+    {
+        text-align: center;
+        font-size: 20px;
+    }
+    nav h2, main h2
+    {
+        text-align: center;
+        font-size: 40px;
+    }
+   
+    
+}
+@media only screen and (min-device-width : 2500px)
+{
+    body
+    {
+        font-size: 2.7em;
+    }
+    .nouveau
+    {
+        left: 33%;
+        width: 10%;
+    }
+    .displayed
+    {
+        height: 350px;
+    }
+    .fo p,.logo1
+    {
+        font-size: 1.4em;
+    }
+    .fo .fas
+    {
+        font-size: 0.8em;
+    }
+}
+
+
+
+
