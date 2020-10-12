@@ -1,7 +1,7 @@
 body
 {
     margin: 0px;
-}
+}                                                                                                                                                                                                                                                                
 main
 {
     background-color: #F2F3F4;
@@ -59,7 +59,6 @@ h4
     font-family: 'roboto';
     font: small-caption;
     font-size: 14px;
-    /* padding-left: 10px; */
     margin-left: 10px;
     width: 100%;
 
@@ -75,31 +74,24 @@ li p
     font-size: 14px;
     margin-top: auto;
     margin-bottom: 0px;
-    /* margin-right: 10px;
-    margin-left: 5px; */
     position: relative;
-	/* left: 0; */
 	transition: left 1s, transform 1s;
     white-space: nowrap;
     background-color: white;
-    width: 27.1%;
-    /* height: 29px; */
+    width: 25%;
     text-align: center;
-    /* padding-top: 15px; */
+}
+li:hover #prix
+{
+    text-align: left;
 }
 .point
 {
-    margin-right: 5px;
-    
+    margin-right: 3px;    
     display: none;
 }
-/* #bloc
-{
-    margin: auto;
-} */
 li:hover .prix {
-	/* left: 0; */
-    transform: translateX(-82.5%);
+    transform: translateX(-57%);
 }
 li:hover .point
 {
@@ -122,7 +114,6 @@ footer h4
 {
     margin-right: 10px;
     font-size: 12px;
-
 }
 .fa-hands-helping
 {
@@ -151,21 +142,15 @@ li
     margin-bottom: 10px;
     background-color: white;
     border-radius: 15px;
-    /* align-content: center; */
-    /* display: inline-flex; */
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     border: none;
     padding-bottom: 10px;
     position: relative;
-
 	width: 100%;
 	opacity: 0;
     animation: fadeIn 1s ease-in both;
-    /* display: flex; */
-  
-    
     text-align: left;
 }
 
@@ -192,12 +177,6 @@ li:nth-child(5) {
 		transform: translate3d(0, 0, 0);
 	}
 }
-/* Button:hover, li:hover
-{
-    cursor: pointer;
-    background-color: #99E2D0;
-     
-} */
 
 p
 {
@@ -303,7 +282,7 @@ main .fas{
 {
     font-family: 'Shrikhand';
     padding-top: 10px;
-    margin-bottom: 15px;
+    /* margin-bottom: 15px; */
 }
 
 
@@ -333,10 +312,7 @@ main .fas{
 		transform: translate3d(0, 0, 0);
 	}
 }
-/* .fa-check-circle  */
 .fa-check-circle
-
-
 {
     margin: 0;
     position: absolute;
@@ -347,9 +323,8 @@ main .fas{
     color: white;
     font-size: 1.4em;
 }
-
-
-.overlay {
+.overlay
+{
     position: absolute;
     bottom: 0;
     left: 110%;
@@ -361,108 +336,129 @@ main .fas{
     transition: .5s ease;
     border-top-right-radius: 15px;
     border-bottom-right-radius: 15px;
-    
-  
-
-  }
-  
-
-  li:hover .overlay {
+}
+li:hover .overlay
+{
     width: 15%;
-   left: 85%;
-    
-  }
-
-
-
-
-  li:hover .overlay .fa-check-circle:before {
+    left: 85%;
+}
+li:hover .overlay .fa-check-circle:before
+{
     transform: rotate(360deg);
-  }
-
-
-  li:hover .overlay .fa-check-circle:before {
+}
+li:hover .overlay .fa-check-circle:before
+{
   display: inline-block;/* mandatory to be able to use transform */
   transition: 1s all;
 }
-
-@media only screen and (min-width: 768px)
+@media only screen and (min-width: 375px)
 {
+    .prix
+    {
+        width: 23%;
+    }
+ 
+  
+    li:hover .point
+    {
+        display: none;
+    }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991.98px)
+{
+    /* main
+    {
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-between;
+        font-family: 'Pangolin', cursive;
+        background-color: #F2F3F4
+     } */
+     .menu
+     {
+         display:flex;
+         flex-direction: column;
+         justify-content: space-between;
+     }
+    .fa-arrow-left, h1
+    {
+        font-size: x-large;
+    }
     .fa-check-circle
-{
-    margin: 0;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    -ms-transform: translate(-50%, -50%);
-    transform: translate(-50%, -50%);
-    color: white;
-    font-size: 1.4em;
+    {
+        margin: 0;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        -ms-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+        color: white;
+        font-size: 1.4em;
+    }
+    .overlay
+    {
+        position: absolute;
+        bottom: 0;
+        left: 110%;
+        right: 0;
+        background-color: #99E2D0;
+        overflow: hidden;
+        width: 0;
+        height: 100%;
+        transition: .5s ease;
+        border-top-right-radius: 15px;
+        border-bottom-right-radius: 15px;
+    }
+    li:hover .overlay
+    {
+        width: 8%;
+        left: 92%;
+    }
+
+    li:hover .overlay .fa-check-circle:before
+    {
+        transform: rotate(360deg);
+    }
+    li:hover .overlay .fa-check-circle:before
+    {
+        display: inline-block;/* mandatory to be able to use transform */
+        transition: 1s all;
+    }
+    .prix
+    {
+    width: 12%;
+    }
+    .gauche, li p, .prix
+    {font-size: large;}
 }
 
-
-.overlay {
-    position: absolute;
-    bottom: 0;
-    left: 110%;
-    right: 0;
-    background-color: #99E2D0;
-    overflow: hidden;
-    width: 0;
-    height: 100%;
-    transition: .5s ease;
-    border-top-right-radius: 15px;
-    border-bottom-right-radius: 15px;
-    
-  
-
-  }
-  
-
-  li:hover .overlay {
-    width: 8%;
-   left: 92%;
-    
-  }
-
-
-
-
-  li:hover .overlay .fa-check-circle:before {
-    transform: rotate(360deg);
-  }
-
-
-  li:hover .overlay .fa-check-circle:before {
-  display: inline-block;/* mandatory to be able to use transform */
-  transition: 1s all;
-}
-/* } */
-
-@media only screen and (min-width: 991.98px) 
-/* @media only screen and (min-width: 768px)  */
-
+@media only screen and (min-width: 991.98px) and (max-width: 1024px)
 {
     body
     {
         font-size: 1.7em;
     }
-    h1, .fa-arrow-left
+    .fa-arrow-left, h1
     {
-        font-size: 30px;
+        font-size: x-large;
     }
+   /* h1
+    {
+        font-size: larger;
+    } */
     main
     {
         display: flex;
         flex-direction: row-reverse;
         justify-content: space-between;
         font-family: 'Pangolin', cursive;
-        background-color: #F2F3F4     }
+        background-color: #F2F3F4
+     }
     main h2, .fa-heart
     {
         font-size: 40px;
-    }
-    
+    }    
     .menu
     {
         display:flex;
@@ -474,12 +470,13 @@ main .fas{
         width: 98%;
         height: 70px;
         margin-bottom: 50px;
+        
     }
     .li
     {
         width: 100%;
+        
     }
-
     button
     {
         width: 99%;
@@ -495,20 +492,10 @@ main .fas{
         width: 97%;
         margin: auto;
     }
-    .fo p, .logo1
+    .fo p
     {
         font-size: large;
     }
-    
-    /* .fo
-    {
-        border-top-right-radius: 20px;
-        border-top-left-radius: 20px;
-        position: relative;
-        BACKGROUND-COLOR: BLACK;
-        WIDTH: 100%;
-        TOP: -170PX;
-    } */
     .logo1, footer p
     {
         margin-left:10px ;
@@ -535,9 +522,7 @@ main .fas{
         transform: translate(-50%, -50%);
         color: white;
         font-size: 1em;
-    }
-    
-    
+    }    
     .overlay
     {
         position: absolute;
@@ -554,8 +539,8 @@ main .fas{
     }
     li:hover .overlay
     {
-        width: 18%;
-        left: 82%;
+        width: 10%;
+        left: 90%;
     }
     li:hover .overlay .fa-check-circle:before
     {
@@ -566,5 +551,322 @@ main .fas{
         display: inline-block;/* mandatory to be able to use transform */
         transition: 1s all;
     }
+    .prix
+    {
+        width: 30%;
+    }
+    .gauche, li p, .prix
+    {
+        font-size: 13px;
+    }
 }
+@media only screen and (min-width: 1024px) and (max-width: 1440px)
+{ 
+    body
+    {
+        font-size: 1.4em;
+    }
+    .fa-arrow-left, h1
+    {
+        font-size: x-large;
+    }
+   /* h1
+    {
+        font-size: larger;
+    } */
+    main
+    {
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-between;
+        font-family: 'Pangolin', cursive;
+        background-color: #F2F3F4     }
+    main h2, .fa-heart
+    {
+        font-size: 40px;
+    }    
+    .menu
+    {
+        display:flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    li
+    {
+        width: 98%;
+        height: 55px;
+        margin-bottom: 50px;
+        
+    }
+    .li
+    {
+        width: 100%;
+        
+    }
+    button
+    {
+        width: 99%;
+    }
+    .centrage
+    {
+        width: 100%;
+        background-color: #F2F3F4;
+        top: -220px;
+    }
+    .centre
+    {
+        width: 97%;
+        margin: auto;
+    }
+    .fo p
+    {
+        font-size: large;
+    }
+    .logo1, footer p
+    {
+        margin-left:10px ;
+    }
+    .commander
+    {
+        position: relative;
+    }
+    footer,footer p
+    {
+        text-align: center;
+    }
+    .btn
+    {
+        margin: 30px;
+    }
+    .fa-check-circle
+    {
+        margin: 0;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        -ms-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+        color: white;
+        font-size: 1em;
+    }    
+    .overlay
+    {
+        position: absolute;
+        bottom: 0;
+        left: 110%;
+        right: 0;
+        background-color: #99E2D0;
+        overflow: hidden;
+        width: 0;
+        height: 100%;
+        transition: .5s ease;
+        border-top-right-radius: 15px;
+        border-bottom-right-radius: 15px;
+    }
+    li:hover .overlay
+    {
+        width: 15%;
+        left: 85%;
+    }
+    li:hover .overlay .fa-check-circle:before
+    {
+        transform: rotate(360deg);
+    }
+    li:hover .overlay .fa-check-circle:before
+    {
+        display: inline-block;/* mandatory to be able to use transform */
+        transition: 1s all;
+    }
+    .prix
+    {
+        width: 25%;
+        margin-top: 25px;
+        margin-bottom: auto;
+    }
+   
+    .gauche, li p, .prix
+    {
+        font-size: 13px;
+    }
+    li:hover .point
+{
+    display: block;
+    display: inline-flex;
+    text-align: left;
 }
+
+
+
+}
+@media only screen and (min-width: 1440px)
+{
+    .fa-arrow-left, h1
+    {
+        font-size: xx-large;
+    }
+    .prix
+    {
+        width: 15%;
+        margin-top: 25px;
+        margin-bottom: auto;
+        margin-right: 27px;
+    }
+    .gauche, li p, .prix
+    {
+        font-size: 17.5px;
+    }
+    li:hover .overlay
+    {
+        width: 13%;
+        left: 87%;
+    }
+    li:hover .point
+    {
+        display: none;
+    }
+    .btn
+        {
+            margin: 30px;
+            font-size: 2em;
+            border-radius: 50px;
+        }
+}
+@media only screen and (min-width: 2560px)
+
+    
+    {
+        body
+        {
+            font-size: 2em;
+        }
+        .fa-arrow-left
+        {
+            font-size: 2.5em;
+            margin-top: 15px;
+            margin-bottom: auto;
+        }
+       h1
+        {
+            font-size: 1.8em;
+        }
+        main
+        {
+            display: flex;
+            flex-direction: row-reverse;
+            justify-content: space-between;
+            font-family: 'Pangolin', cursive;
+            background-color: #F2F3F4
+        }
+        main h2, .fa-heart
+        {
+            font-size: 40px;
+        }    
+        .menu
+        {
+            display:flex;
+            flex-direction: row;
+            justify-content: space-between;
+        }
+        li
+        {
+            width: 98%;
+            height: 140px;
+            margin-bottom: 50px;
+
+        }
+        .li
+        {
+            width: 100%;            
+        }
+        button
+        {
+            width: 99%;
+        }
+        .centrage
+        {
+            width: 100%;
+            background-color: #F2F3F4;
+            top: -220px;
+        }
+        .centre
+        {
+            width: 97%;
+            margin: auto;
+        }
+        .fo p
+        {
+            font-size: large;
+        }
+        .logo1, footer p
+        {
+            margin-left:10px ;
+        }
+        .commander
+        {
+            position: relative;
+            
+        }
+        .fo, .fo p, .fo .fas
+        {
+            text-align: center;
+            font-size: 50px;
+        }
+        .btn
+        {
+            margin: 30px;
+            font-size: 2em;
+            border-radius: 50px;
+        }
+        .fa-check-circle
+        {
+            margin: 0;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            -ms-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+            color: white;
+            font-size: 1.5em;
+        }    
+        .overlay
+        {
+            position: absolute;
+            bottom: 0;
+            left: 110%;
+            right: 0;
+            background-color: #99E2D0;
+            overflow: hidden;
+            width: 0;
+            height: 100%;
+            transition: .5s ease;
+            border-top-right-radius: 15px;
+            border-bottom-right-radius: 15px;
+        }
+        li:hover .overlay
+        {
+            width: 12%;
+            left: 88%;
+        }
+        li:hover .overlay .fa-check-circle:before
+        {
+            transform: rotate(360deg);
+        }
+        li:hover .overlay .fa-check-circle:before
+        {
+            display: inline-block;/* mandatory to be able to use transform */
+            transition: 1s all;
+        }
+        .prix
+        {
+            width: 17%;
+            margin-top: auto;
+            margin-bottom: auto;
+            /* margin-right: 5px; */
+        }
+        .gauche, li p, .prix
+        {
+            font-size: 35px;
+        }
+    
+    }
+

@@ -350,10 +350,9 @@ li:hover .overlay .fa-check-circle:before
 @media only screen and (min-width: 375px)
 {
     li:hover .point
-{
-    display: none;
-    
-}
+    {
+        display: none;
+    }
 }
 
 @media only screen and (min-width: 768px)
@@ -675,17 +674,29 @@ li:hover .overlay .fa-check-circle:before
     .prix
     {
         width: 15%;
-        margin-top: 25px;
+        margin-top: auto;
         margin-bottom: auto;
         margin-right: 27px;
     }
     .gauche, li p, .prix
-    {font-size: 17.5px;}
+    {
+        font-size: 16.5px;
+    }
     li:hover .overlay
     {
         width: 13%;
         left: 87%;
     }
+    li:hover .point
+    {
+        display: none;       
+    }
+    .btn
+        {
+            margin: 30px;
+            font-size: 2em;
+            border-radius: 50px;
+        }
 }
 @media only screen and (mIN-width: 2560px)
 
@@ -723,8 +734,8 @@ li:hover .overlay .fa-check-circle:before
         }
         li
         {
-            width: 98%;
-            height: 70px;
+            width: 99%;
+            height: 148px;
             margin-bottom: 50px;
 
         }
@@ -747,13 +758,14 @@ li:hover .overlay .fa-check-circle:before
             width: 97%;
             margin: auto;
         }
-        .fo p
+        /* .fo p
         {
             font-size: large;
-        }
-        .logo1, footer p
+        } */
+        .fo, .fo p, .fo .fas
         {
-            margin-left:10px ;
+            text-align: center;
+            font-size: 50px;
         }
         .commander
         {
@@ -766,6 +778,8 @@ li:hover .overlay .fa-check-circle:before
         .btn
         {
             margin: 30px;
+            font-size: 2em;
+            border-radius: 50px;
         }
         .fa-check-circle
         {
@@ -776,7 +790,7 @@ li:hover .overlay .fa-check-circle:before
             -ms-transform: translate(-50%, -50%);
             transform: translate(-50%, -50%);
             color: white;
-            font-size: 1em;
+            font-size: 1.5em;
         }    
         .overlay
         {
@@ -794,8 +808,8 @@ li:hover .overlay .fa-check-circle:before
         }
         li:hover .overlay
         {
-            width: 10%;
-            left: 90%;
+            width: 11%;
+            left: 89%;
         }
         li:hover .overlay .fa-check-circle:before
         {
@@ -808,14 +822,20 @@ li:hover .overlay .fa-check-circle:before
         }
         .prix
         {
-            width: 15%;
-            margin-top: 37px;
+            width: 19.8%;
+            margin-top: auto;
             margin-bottom: auto;
-            margin-right: 5px;
         }
+        
         .gauche, li p, .prix
         {
-            font-size: 25px;
+            font-size: 35px;
+        }
+        li:hover .point
+        {
+            display: block;
+            display: inline-flex;
+            left: 0;
         }
     
     }
