@@ -72,22 +72,40 @@ li p
 .prix
 {
     font-weight: bold;
+    font-size: 14px;
     margin-top: auto;
     margin-bottom: 0px;
-    /* margin-right: 15px;
-    margin-left: 15px; */
+    /* margin-right: 10px;
+    margin-left: 5px; */
     position: relative;
 	/* left: 0; */
 	transition: left 1s, transform 1s;
-	white-space: nowrap;
+    white-space: nowrap;
+    background-color: white;
+    width: 27.1%;
+    /* height: 29px; */
+    text-align: center;
+    /* padding-top: 15px; */
+}
+.point
+{
+    margin-right: 5px;
+    
+    display: none;
 }
 /* #bloc
 {
     margin: auto;
 } */
-li:hover .prix{
+li:hover .prix {
 	/* left: 0; */
-	transform: translateX(-250%);
+    transform: translateX(-82.5%);
+}
+li:hover .point
+{
+    display: block;
+    display: inline-flex;
+    left: 0;
 }
 
 
@@ -288,7 +306,140 @@ main .fas{
     margin-bottom: 15px;
 }
 
-@media only screen and (min-width: 991.98px)
+
+.main button {
+	animation: fadeIn 1s ease-in both;
+}
+.main button:nth-child(1) {
+	animation-delay: 1s;
+}
+.main button:nth-child(2) {
+	animation-delay: 2s;
+}
+.main button:nth-child(3) {
+	animation-delay: 3s;
+}
+.main button:nth-child(4) {
+	animation-delay: 4s;
+}
+
+@keyframes fadeIn {
+	from {
+		opacity: 0;
+		transform: translate3d(0, 20%, 0);
+	}
+	to {
+		opacity: 1;
+		transform: translate3d(0, 0, 0);
+	}
+}
+/* .fa-check-circle  */
+.fa-check-circle
+
+
+{
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 1.4em;
+}
+
+
+.overlay {
+    position: absolute;
+    bottom: 0;
+    left: 110%;
+    right: 0;
+    background-color: #99E2D0;
+    overflow: hidden;
+    width: 0;
+    height: 100%;
+    transition: .5s ease;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+    
+  
+
+  }
+  
+
+  li:hover .overlay {
+    width: 15%;
+   left: 85%;
+    
+  }
+
+
+
+
+  li:hover .overlay .fa-check-circle:before {
+    transform: rotate(360deg);
+  }
+
+
+  li:hover .overlay .fa-check-circle:before {
+  display: inline-block;/* mandatory to be able to use transform */
+  transition: 1s all;
+}
+
+@media only screen and (min-width: 768px)
+{
+    .fa-check-circle
+{
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 1.4em;
+}
+
+
+.overlay {
+    position: absolute;
+    bottom: 0;
+    left: 110%;
+    right: 0;
+    background-color: #99E2D0;
+    overflow: hidden;
+    width: 0;
+    height: 100%;
+    transition: .5s ease;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+    
+  
+
+  }
+  
+
+  li:hover .overlay {
+    width: 8%;
+   left: 92%;
+    
+  }
+
+
+
+
+  li:hover .overlay .fa-check-circle:before {
+    transform: rotate(360deg);
+  }
+
+
+  li:hover .overlay .fa-check-circle:before {
+  display: inline-block;/* mandatory to be able to use transform */
+  transition: 1s all;
+}
+/* } */
+
+@media only screen and (min-width: 991.98px) 
 /* @media only screen and (min-width: 768px)  */
 
 {
@@ -300,7 +451,8 @@ main .fas{
     {
         font-size: 30px;
     }
-    main {
+    main
+    {
         display: flex;
         flex-direction: row-reverse;
         justify-content: space-between;
@@ -373,84 +525,46 @@ main .fas{
     {
         margin: 30px;
     }
+    .fa-check-circle
+    {
+        margin: 0;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        -ms-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+        color: white;
+        font-size: 1em;
+    }
     
-
-}
-.main button {
-	animation: fadeIn 1s ease-in both;
-}
-.main button:nth-child(1) {
-	animation-delay: 1s;
-}
-.main button:nth-child(2) {
-	animation-delay: 2s;
-}
-.main button:nth-child(3) {
-	animation-delay: 3s;
-}
-.main button:nth-child(4) {
-	animation-delay: 4s;
-}
-
-@keyframes fadeIn {
-	from {
-		opacity: 0;
-		transform: translate3d(0, -20%, 0);
-	}
-	to {
-		opacity: 1;
-		transform: translate3d(0, 0, 0);
-	}
-}
-/* .fa-check-circle  */
-.fa-check-circle
-
-
-{
-    margin: 0;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    -ms-transform: translate(-50%, -50%);
-    transform: translate(-50%, -50%);
-    color: white;
-    font-size: 1.4em;
-}
-
-
-.overlay {
-    position: absolute;
-    bottom: 0;
-    left: 110%;
-    right: 0;
-    background-color: #99E2D0;
-    overflow: hidden;
-    width: 0;
-    height: 100%;
-    transition: .5s ease;
-    border-top-right-radius: 15px;
-    border-bottom-right-radius: 15px;
     
-  
-
-  }
-  
-
-  li:hover .overlay {
-    width: 17%;
-    left:83%;
-    
-  }
-
-
-
-
-  li:hover .overlay .fa-check-circle:before {
-    transform: rotate(360deg);
-  }
-
-
-  li:hover .overlay .fa-check-circle:before {
-  display: inline-block;/* mandatory to be able to use transform */
-  transition: 1s all;
+    .overlay
+    {
+        position: absolute;
+        bottom: 0;
+        left: 110%;
+        right: 0;
+        background-color: #99E2D0;
+        overflow: hidden;
+        width: 0;
+        height: 100%;
+        transition: .5s ease;
+        border-top-right-radius: 15px;
+        border-bottom-right-radius: 15px;
+    }
+    li:hover .overlay
+    {
+        width: 18%;
+        left: 82%;
+    }
+    li:hover .overlay .fa-check-circle:before
+    {
+        transform: rotate(360deg);
+    }
+    li:hover .overlay .fa-check-circle:before
+    {
+        display: inline-block;/* mandatory to be able to use transform */
+        transition: 1s all;
+    }
+}
 }
