@@ -6,8 +6,23 @@
     flex-direction: row;
 }
 
-
-
+/* .ellipsis
+{
+text-overflow:ellipsis;
+  overflow:hidden;
+  white-space:nowrap;
+} */
+@media only screen and (min-width: 375px)
+{
+    .prix
+    {
+        width: 15%;
+    }
+    li:hover .ellipsis
+    {
+        width: 100%;
+    }
+}
 @media only screen and (min-width: 768px)
 {
     .prix
@@ -46,4 +61,21 @@
         width: 15%;
         left: 85%;
     }
+    li:hover .ellipsis
+    {
+        width: 70%;
+       
+    }
 }
+@media only screen and (min-width: 1440px)
+{
+    .prix
+    {
+        width: 17%;
+    }
+   
+    li:hover .point
+    {
+        display: none;
+    }
+} 

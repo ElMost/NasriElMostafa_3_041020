@@ -1,16 +1,22 @@
-.prix
+ .prix
 {
-    width: 25.9%;
+    width: 28.55%;
 }
 li:hover .prix {
-    transform: translateX(-107%);
+    transform: translateX(-91.9%);
     display: flex;
     justify-content: space-around;
-}
+} 
+
 li:hover #point
 {
     display: none;
 }
+li:hover .ellipsis
+    {
+        width: 75%;
+       
+    }
 @media only screen and (min-width: 375px)
 {
     .prix
@@ -22,6 +28,11 @@ li:hover #point
     {
         width: 13%;
         left: 87%;
+    }
+    li:hover .ellipsis
+    {
+        width: 100%;
+       
     }
 
 }
@@ -37,14 +48,15 @@ li:hover #point
         width: 8%;
         left: 92%;
     }
+  
 
 }
 
-@media only screen and (max-width: 1024px) 
+@media only screen and (min-width: 1024px) 
 {
     .prix
     {
-        width: 20.8%;
+        width: 24.15%;
         margin-top: 24px;
     }
     li:hover .prix
@@ -62,13 +74,18 @@ li:hover #point
         width: 15%;
         left: 85%;
     }
+    li:hover .ellipsis
+    {
+        width: 70%;
+       
+    }
 }
-/* @media only screen and (min-width: 1024px) and (max-width:2600px)
+ @media only screen and (min-width: 1440px)
 {
     .prix
     {
-        width: 12%;
-        margin-top: 30px;
+        width: 17%;
+        /* margin-top: 30px; */
     }
     li:hover .point, li:hover #point
     {
@@ -76,7 +93,11 @@ li:hover #point
     }
     li:hover .overlay
     {
-        width: 12%;
-        left: 88%;
+        width: 13%;
+        left: 87%;
     }
-} */
+    li:hover .ellipsis
+    {
+        width: 100%;
+    }
+} 
