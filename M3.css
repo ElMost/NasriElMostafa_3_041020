@@ -1,0 +1,67 @@
+.prix
+{
+    width:21%;
+    display: flex;
+    justify-content: space-around;
+}
+.fa-check-circle:before
+{
+    font-size: large;
+}
+li:hover .prix
+{
+    transform: translateX(-81%);
+}
+li:hover .overlay
+{
+    width: 13%;
+    left: 87%;
+}
+    li:hover .overlay .fa-check-circle:before
+{
+    transform: rotate(360deg);
+}
+li:hover .overlay .fa-check-circle:before
+{
+  display: inline-block;/* mandatory to be able to use transform */
+  transition: 1s all;
+}
+@media only screen and (min-width: 768px)
+{
+    .prix
+    {
+        width: 15%;
+    }
+    li:hover .prix
+    {
+        transform: translateX(-40%);
+    }
+    li:hover .point
+    {
+        display: none;
+    }
+
+}
+@media only screen and (min-width: 1024px) 
+{
+    .prix
+    {
+        width: 18%;
+        margin-top: 24px;
+    }
+    li:hover .prix
+    {
+        transform: translateX(-113%);
+    }
+    li:hover .point , li:hover #point
+    {
+        display: block;
+        display: inline-flex;
+        text-align: left;
+    }
+    li:hover .overlay
+    {
+        width: 15%;
+        left: 85%;
+    }
+}

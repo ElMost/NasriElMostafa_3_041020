@@ -1,0 +1,49 @@
+.prix
+{
+    width:23%;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+}
+
+
+
+@media only screen and (min-width: 768px)
+{
+    .prix
+    {
+        width: 15%;
+    }
+    li:hover .prix
+    {
+        transform: translateX(-35%);
+    }
+    li:hover .point
+    {
+        display: none;
+    }
+
+}
+@media only screen and (min-width: 1024px) 
+{
+    .prix
+    {
+        width: 20.8%;
+        margin-top: 24px;
+    }
+    li:hover .prix
+    {
+        transform: translateX(-114.3%);
+    }
+    li:hover .point , li:hover #point
+    {
+        display: block;
+        display: inline-flex;
+        text-align: left;
+    }
+    li:hover .overlay
+    {
+        width: 15%;
+        left: 85%;
+    }
+}

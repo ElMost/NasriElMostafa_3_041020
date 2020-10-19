@@ -1,6 +1,11 @@
 body
 {
     margin: 0px;
+}
+.container
+{
+    max-width: 1200px;
+    margin: auto;
 }                                                                                                                                                                                                                                                                
 main
 {
@@ -58,7 +63,7 @@ h4
     text-align: left;
     font-family: 'roboto';
     font: small-caption;
-    font-size: 14px;
+    font-size: 12.5PX;
     margin-left: 10px;
     width: 100%;
 
@@ -66,11 +71,37 @@ h4
 li p
 {
     margin: 0px;
-    font-size: small;
+    font-size: 12.5PX;
 }
 .prix
 {
     font-weight: bold;
+    font-size:12.5PX;
+    margin-top: auto;
+    margin-bottom: 0px;
+    position: relative;
+	transition: left 1s, transform 1s;
+    white-space: nowrap;
+    background-color: white;
+    width: 25%;
+    text-align: center;
+    
+}
+li:hover #prix
+{
+    text-align: right;
+    /* display: flex;
+    justify-content: space-between; */
+}
+.point
+{
+    margin-right: 3px;    
+    display: none;
+}
+/* #POINT
+{ */
+    /* display: inline-flex; */
+    /* font-weight: bold;
     font-size: 14px;
     margin-top: auto;
     margin-bottom: 0px;
@@ -78,22 +109,21 @@ li p
 	transition: left 1s, transform 1s;
     white-space: nowrap;
     background-color: white;
-    width: 32%;
-    text-align: center;
-}
-.point
-{
-    margin-right: 3px;    
-    display: none;
-}
+    width: 33.5%;
+    text-align: center; */
+    /* display: flex;
+    flex-direction: row; */
+/* } */
 li:hover .prix {
-    transform: translateX(-57%);
+    transform: translateX(-87%);
+    /* text-align: start; */
+
 }
 li:hover .point
 {
     display: block;
     display: inline-flex;
-    left: 0;
+    text-align: start;
 }
 
 
@@ -323,7 +353,7 @@ main .fas{
 {
     position: absolute;
     bottom: 0;
-    left: 110%;
+    left: 100%;
     right: 0;
     background-color: #99E2D0;
     overflow: hidden;
@@ -349,19 +379,64 @@ li:hover .overlay .fa-check-circle:before
 }
 @media only screen and (min-width: 375px)
 {
+    .overlay
+{
+    position: absolute;
+    bottom: 0;
+    left: 100%;
+    right: 0;
+    background-color: #99E2D0;
+    overflow: hidden;
+    width: 0;
+    height: 100%;
+    transition: .5s ease;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+}
     .prix
     {
-        width: 30%;
+        width: 16%;
     }
+ 
   
     li:hover .point
     {
         display: none;
     }
+    li:hover #prix
+    {
+        text-align: center;
+    }
+    li:hover .overlay
+    {
+        width: 12%;
+        left: 88%;
+    }
+    /* .gauche, li p, .prix
+    {
+        font-size:small;
+    } */
 }
 
 @media only screen and (min-width: 768px)
+ /* and (max-width: 991.98px) */
+/* @media (max-width: 991.98px) */
+
 {
+    /* main
+    {
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-between;
+        font-family: 'Pangolin', cursive;
+        background-color: #F2F3F4
+     } */
+     .menu
+     {
+         display:flex;
+         flex-direction: column;
+         justify-content: space-between;
+     }
     .fa-arrow-left, h1
     {
         font-size: x-large;
@@ -381,7 +456,7 @@ li:hover .overlay .fa-check-circle:before
     {
         position: absolute;
         bottom: 0;
-        left: 110%;
+        left: 100%;
         right: 0;
         background-color: #99E2D0;
         overflow: hidden;
@@ -410,11 +485,18 @@ li:hover .overlay .fa-check-circle:before
     {
     width: 12%;
     }
+    li:hover #prix
+{
+    text-align: center;
+}
     .gauche, li p, .prix
-    {font-size: large;}
+    {
+        font-size: large;
+    }
 }
 
-@media only screen and (min-width: 991.98px) and (max-width: 1024px)
+@media only screen and (min-width: 992px)
+/* @media (max-width: 1199.98px) */
 {
     body
     {
@@ -422,7 +504,7 @@ li:hover .overlay .fa-check-circle:before
     }
     .fa-arrow-left, h1
     {
-        font-size: larger;
+        font-size: x-large;
     }
    /* h1
     {
@@ -434,7 +516,8 @@ li:hover .overlay .fa-check-circle:before
         flex-direction: row-reverse;
         justify-content: space-between;
         font-family: 'Pangolin', cursive;
-        background-color: #F2F3F4     }
+        background-color: #F2F3F4
+     }
     main h2, .fa-heart
     {
         font-size: 40px;
@@ -448,7 +531,7 @@ li:hover .overlay .fa-check-circle:before
     li
     {
         width: 98%;
-        height: 70px;
+        height: 60px;
         margin-bottom: 50px;
         
     }
@@ -501,13 +584,13 @@ li:hover .overlay .fa-check-circle:before
         -ms-transform: translate(-50%, -50%);
         transform: translate(-50%, -50%);
         color: white;
-        font-size: 1em;
+        font-size: 0.9em;
     }    
     .overlay
     {
         position: absolute;
         bottom: 0;
-        left: 110%;
+        left: 100%;
         right: 0;
         background-color: #99E2D0;
         overflow: hidden;
@@ -519,8 +602,8 @@ li:hover .overlay .fa-check-circle:before
     }
     li:hover .overlay
     {
-        width: 10%;
-        left: 90%;
+        width: 17%;
+        left: 83%;
     }
     li:hover .overlay .fa-check-circle:before
     {
@@ -533,12 +616,16 @@ li:hover .overlay .fa-check-circle:before
     }
     .prix
     {
-        width: 30%;
+        width: 27%;
+        margin-bottom: auto;
+        margin-top: 24px;
     }
     .gauche, li p, .prix
     {font-size: 13px;}
 }
-@media only screen and (min-width: 1024px) and (max-width: 1440px)
+@media only screen and (min-width: 1024px) 
+/* and (max-width: 1440px) */
+/* @media (max-width: 1440px) */
 { 
     body
     {
@@ -546,7 +633,7 @@ li:hover .overlay .fa-check-circle:before
     }
     .fa-arrow-left, h1
     {
-        font-size: larger;
+        font-size: x-large;
     }
    /* h1
     {
@@ -572,7 +659,7 @@ li:hover .overlay .fa-check-circle:before
     li
     {
         width: 98%;
-        height: 70px;
+        height: 55px;
         margin-bottom: 50px;
         
     }
@@ -631,7 +718,7 @@ li:hover .overlay .fa-check-circle:before
     {
         position: absolute;
         bottom: 0;
-        left: 110%;
+        left: 100%;
         right: 0;
         background-color: #99E2D0;
         overflow: hidden;
@@ -657,36 +744,36 @@ li:hover .overlay .fa-check-circle:before
     }
     .prix
     {
-        width: 35%;
-        margin-top: 25px;
+        width: 25%;
+        margin-top: 27px;
         margin-bottom: auto;
-        margin-right: 8px;
     }
+   
     .gauche, li p, .prix
     {
         font-size: 13px;
     }
     li:hover .point
-{
-    display: block;
-    display: inline-flex;
-    text-align: left;
-}
+    {
+        display: none;
+        /* display: inline-flex; */
+        text-align: left;
+    }
+
+
 
 }
-@media only screen and (min-width: 1440px)
+/* @media only screen and (min-width: 1440px) and (max-width: 1440px) 
 {
     .fa-arrow-left, h1
     {
-        font-size: larger;
+        font-size: xx-large;
     }
-    .prix
-    {
-        width: 15%;
-        margin-top: 25px;
-        margin-bottom: auto;
-        margin-right: 27px;
+    li:hover .prix {
+        transform: translateX(-60.3%);
+
     }
+    
     .gauche, li p, .prix
     {
         font-size: 17.5px;
@@ -700,137 +787,10 @@ li:hover .overlay .fa-check-circle:before
     {
         display: none;
     }
-}
-@media only screen and (mIN-width: 2560px)
-
-    
+    .btn
     {
-        body
-        {
-            font-size: 2em;
-        }
-        .fa-arrow-left, h1
-        {
-            font-size: larger;
-        }
-       /* h1
-        {
-            font-size: larger;
-        } */
-        main
-        {
-            display: flex;
-            flex-direction: row-reverse;
-            justify-content: space-between;
-            font-family: 'Pangolin', cursive;
-            background-color: #F2F3F4
-        }
-        main h2, .fa-heart
-        {
-            font-size: 40px;
-        }    
-        .menu
-        {
-            display:flex;
-            flex-direction: row;
-            justify-content: space-between;
-        }
-        li
-        {
-            width: 98%;
-            height: 70px;
-            margin-bottom: 50px;
-
-        }
-        .li
-        {
-            width: 100%;            
-        }
-        button
-        {
-            width: 99%;
-        }
-        .centrage
-        {
-            width: 100%;
-            background-color: #F2F3F4;
-            top: -220px;
-        }
-        .centre
-        {
-            width: 97%;
-            margin: auto;
-        }
-        .fo p
-        {
-            font-size: large;
-        }
-        .logo1, footer p
-        {
-            margin-left:10px ;
-        }
-        .commander
-        {
-            position: relative;
-        }
-        footer,footer p
-        {
-            text-align: center;
-        }
-        .btn
-        {
-            margin: 30px;
-        }
-        .fa-check-circle
-        {
-            margin: 0;
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            -ms-transform: translate(-50%, -50%);
-            transform: translate(-50%, -50%);
-            color: white;
-            font-size: 1em;
-        }    
-        .overlay
-        {
-            position: absolute;
-            bottom: 0;
-            left: 110%;
-            right: 0;
-            background-color: #99E2D0;
-            overflow: hidden;
-            width: 0;
-            height: 100%;
-            transition: .5s ease;
-            border-top-right-radius: 15px;
-            border-bottom-right-radius: 15px;
-        }
-        li:hover .overlay
-        {
-            width: 10%;
-            left: 90%;
-        }
-        li:hover .overlay .fa-check-circle:before
-        {
-            transform: rotate(360deg);
-        }
-        li:hover .overlay .fa-check-circle:before
-        {
-            display: inline-block;/* mandatory to be able to use transform */
-            transition: 1s all;
-        }
-        .prix
-        {
-            width: 15%;
-            margin-top: 37px;
-            margin-bottom: auto;
-            margin-right: 5px;
-        }
-        .gauche, li p, .prix
-        {
-            font-size: 25px;
-        }
-    
+        margin: 30px;
+        font-size: 2em;
+        border-radius: 50px;
     }
-
+} */
